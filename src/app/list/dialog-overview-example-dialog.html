@@ -1,0 +1,42 @@
+<form [formGroup]="basicForm" (ngSubmit)="onSubmitCatForm(basicForm)">
+  <div fxLayout="row" fxLayoutWrap="wrap">
+    <div fxFlex="100" fxFlex.gt-xs="100" class="pr-1">
+    
+      <div class="pb-1">
+            <mat-input-container style="width: 100%;">
+                    <input matInput formControlName="name" placeholder="Cat Name">
+              
+            </mat-input-container>
+      </div>
+
+      <div class="pb-1">
+        <mat-input-container style="width: 100%;">
+                <input matInput formControlName="breed" placeholder="Breed">
+         
+        </mat-input-container>
+
+
+
+      </div>
+      <div class="pb-1">
+            <mat-input-container style="width: 100%;">
+                    <input matInput formControlName="age" placeholder="Age">
+            
+            </mat-input-container>
+
+            <mat-input-container style="display:none;">
+              <input matInput formControlName="id" placeholder="Age">
+      
+      </mat-input-container>
+    
+    
+    
+          </div>
+
+
+    </div>
+  </div>
+
+  <button mat-raised-button color="primary" [disabled]="basicForm.invalid">Submit</button>
+
+</form>

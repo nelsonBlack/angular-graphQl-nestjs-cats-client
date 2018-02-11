@@ -1,0 +1,21 @@
+
+<mat-toolbar color="primary">Cats Crud
+    <span class="example-spacer"></span>
+
+   ADD <button mat-fab color="accent" (click)="createCat()"><i class="material-icons">add</i></button>
+</mat-toolbar>
+
+<div *ngFor="let cat of cats ">
+<mat-card >
+    <mat-card-title>Name: {{cat.name}}</mat-card-title>
+    <mat-card-subtitle>ID: {{cat.id}}</mat-card-subtitle>
+    <mat-card-content>Breed: {{cat.breed}}, Age: {{cat.age}} </mat-card-content>
+    <mat-card-actions>
+       
+        <button mat-raised-button color="warn" (click)="deleteCats(cat.id)">DELETE</button>
+        <button mat-raised-button color="primary" (click)="openDialog(cat)">EDIT</button>
+      </mat-card-actions>
+  <!--   <mat-card-footer><a href="{{course.url}}">Go to Course...</a></mat-card-footer> -->
+</mat-card>
+</div>
+
