@@ -3,8 +3,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
 ## Development server
-First set up server , you can find grapgql cats server at https://github.com/nelsonBlack/nestjs-mysql-graphql-sequelize-typescript
-after setting up and running server, run the client 
+###First set up server , you can find grapgql cats server at https://github.com/nelsonBlack/nestjs-mysql-graphql-sequelize-typescript
+
+###After setting up and running server, run the client 
 `npm start`
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
